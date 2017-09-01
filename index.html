@@ -1,0 +1,1116 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style text="text/css">
+      @font-face{font-family:seravek-web;src:url(https://use.typekit.net/af/24a32d/00000000000000003b9ace31/27/l?subset_id=1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/24a32d/00000000000000003b9ace31/27/d?subset_id=1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/24a32d/00000000000000003b9ace31/27/a?subset_id=1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:seravek-web;src:url(https://use.typekit.net/af/d0d4ad/00000000000000003b9ace32/27/l?subset_id=1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/d0d4ad/00000000000000003b9ace32/27/d?subset_id=1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/d0d4ad/00000000000000003b9ace32/27/a?subset_id=1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:seravek-web;src:url(https://use.typekit.net/af/b74b14/00000000000000003b9ace44/27/l?subset_id=1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b74b14/00000000000000003b9ace44/27/d?subset_id=1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b74b14/00000000000000003b9ace44/27/a?subset_id=1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:seravek-web;src:url(https://use.typekit.net/af/a7479b/00000000000000003b9ace35/27/l?subset_id=1&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/a7479b/00000000000000003b9ace35/27/d?subset_id=1&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/a7479b/00000000000000003b9ace35/27/a?subset_id=1&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:seravek-web;src:url(https://use.typekit.net/af/09ba73/00000000000000003b9ace2d/27/l?subset_id=1&fvd=n2&v=3) format("woff2"),url(https://use.typekit.net/af/09ba73/00000000000000003b9ace2d/27/d?subset_id=1&fvd=n2&v=3) format("woff"),url(https://use.typekit.net/af/09ba73/00000000000000003b9ace2d/27/a?subset_id=1&fvd=n2&v=3) format("opentype");font-weight:200;font-style:normal;}@font-face{font-family:seravek-web;src:url(https://use.typekit.net/af/765256/00000000000000003b9ace2f/27/l?subset_id=1&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/765256/00000000000000003b9ace2f/27/d?subset_id=1&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/765256/00000000000000003b9ace2f/27/a?subset_id=1&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/73776a/0000000000000000000132df/27/l?subset_id=1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/73776a/0000000000000000000132df/27/d?subset_id=1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/73776a/0000000000000000000132df/27/a?subset_id=1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/0abd16/0000000000000000000132e3/27/l?subset_id=1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/0abd16/0000000000000000000132e3/27/d?subset_id=1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/0abd16/0000000000000000000132e3/27/a?subset_id=1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/60a2a8/0000000000000000000132e5/27/l?subset_id=1&fvd=n9&v=3) format("woff2"),url(https://use.typekit.net/af/60a2a8/0000000000000000000132e5/27/d?subset_id=1&fvd=n9&v=3) format("woff"),url(https://use.typekit.net/af/60a2a8/0000000000000000000132e5/27/a?subset_id=1&fvd=n9&v=3) format("opentype");font-weight:900;font-style:normal;}@font-face{font-family:nimbus-sans-condensed;src:url(https://use.typekit.net/af/9a4ab6/000000000000000000010124/27/l?subset_id=1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9a4ab6/000000000000000000010124/27/d?subset_id=1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9a4ab6/000000000000000000010124/27/a?subset_id=1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:nimbus-sans-condensed;src:url(https://use.typekit.net/af/c90ed8/000000000000000000010125/27/l?subset_id=1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/c90ed8/000000000000000000010125/27/d?subset_id=1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/c90ed8/000000000000000000010125/27/a?subset_id=1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:open-sans;src:url(https://use.typekit.net/af/d85dc3/000000000000000000011c34/27/l?subset_id=1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/d85dc3/000000000000000000011c34/27/d?subset_id=1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/d85dc3/000000000000000000011c34/27/a?subset_id=1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:open-sans;src:url(https://use.typekit.net/af/bf8c26/000000000000000000011c35/27/l?subset_id=1&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/bf8c26/000000000000000000011c35/27/d?subset_id=1&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/bf8c26/000000000000000000011c35/27/a?subset_id=1&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:open-sans;src:url(https://use.typekit.net/af/2398c6/000000000000000000011c38/27/l?subset_id=1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/2398c6/000000000000000000011c38/27/d?subset_id=1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/2398c6/000000000000000000011c38/27/a?subset_id=1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:open-sans;src:url(https://use.typekit.net/af/21f561/000000000000000000011c3b/27/l?subset_id=1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/21f561/000000000000000000011c3b/27/d?subset_id=1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/21f561/000000000000000000011c3b/27/a?subset_id=1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:roboto;src:url(https://use.typekit.net/af/9769fd/00000000000000003b9ad05f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/9769fd/00000000000000003b9ad05f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/9769fd/00000000000000003b9ad05f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:roboto;src:url(https://use.typekit.net/af/e48f19/00000000000000003b9ad055/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/e48f19/00000000000000003b9ad055/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/e48f19/00000000000000003b9ad055/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:roboto;src:url(https://use.typekit.net/af/60d027/00000000000000003b9ad05b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/60d027/00000000000000003b9ad05b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/60d027/00000000000000003b9ad05b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:open-sans-condensed;src:url(https://use.typekit.net/af/3ab8f0/000000000000000000012518/27/l?primer=e7c58b81a305e1fc09dd5591d751a34891b5b63ab278ac3b87ed8857fdd9b01a&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/3ab8f0/000000000000000000012518/27/d?primer=e7c58b81a305e1fc09dd5591d751a34891b5b63ab278ac3b87ed8857fdd9b01a&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/3ab8f0/000000000000000000012518/27/a?primer=e7c58b81a305e1fc09dd5591d751a34891b5b63ab278ac3b87ed8857fdd9b01a&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:source-sans-pro;src:url(https://use.typekit.net/af/7a6eb3/00000000000000003b9acb59/27/l?subset_id=1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/7a6eb3/00000000000000003b9acb59/27/d?subset_id=1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/7a6eb3/00000000000000003b9acb59/27/a?subset_id=1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:source-sans-pro;src:url(https://use.typekit.net/af/b47c33/00000000000000003b9acb5c/27/l?subset_id=1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b47c33/00000000000000003b9acb5c/27/d?subset_id=1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b47c33/00000000000000003b9acb5c/27/a?subset_id=1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:source-sans-pro;src:url(https://use.typekit.net/af/784187/00000000000000003b9acb5d/27/l?subset_id=1&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/784187/00000000000000003b9acb5d/27/d?subset_id=1&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/784187/00000000000000003b9acb5d/27/a?subset_id=1&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:source-sans-pro;src:url(https://use.typekit.net/af/a698da/00000000000000003b9acb58/27/l?subset_id=1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/a698da/00000000000000003b9acb58/27/d?subset_id=1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/a698da/00000000000000003b9acb58/27/a?subset_id=1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:industry;src:url(https://use.typekit.net/af/9059ce/00000000000000003b9adf55/27/l?subset_id=1&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/9059ce/00000000000000003b9adf55/27/d?subset_id=1&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/9059ce/00000000000000003b9adf55/27/a?subset_id=1&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}
+    </style>
+    <style type="text/css">
+
+      .gsc-control-cse {
+        font-family: Arial, sans-serif;
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
+      }
+      .gsc-control-cse .gsc-table-result {
+        font-family: Arial, sans-serif;
+      }
+      input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+        border-color: #D9D9D9;
+      }
+      input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+        border-color: #666666;
+        background-color: #CECECE;
+        background-image: none;
+        filter: none;
+      }
+      .gsc-tabHeader.gsc-tabhInactive {
+        border-color: #E9E9E9;
+        background-color: #E9E9E9;
+      }
+      .gsc-tabHeader.gsc-tabhActive {
+        border-color: #FF9900;
+        border-bottom-color: #FFFFFF;
+        background-color: #FFFFFF;
+      }
+      .gsc-tabsArea {
+        border-color: #FF9900;
+      }
+      .gsc-webResult.gsc-result,
+      .gsc-results .gsc-imageResult {
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
+      }
+      .gsc-webResult.gsc-result:hover,
+      .gsc-imageResult:hover {
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
+      }
+      .gs-webResult.gs-result a.gs-title:link,
+      .gs-webResult.gs-result a.gs-title:link b,
+      .gs-imageResult a.gs-title:link,
+      .gs-imageResult a.gs-title:link b {
+        color: #0000CC;
+      }
+      .gs-webResult.gs-result a.gs-title:visited,
+      .gs-webResult.gs-result a.gs-title:visited b,
+      .gs-imageResult a.gs-title:visited,
+      .gs-imageResult a.gs-title:visited b {
+        color: #0000CC;
+      }
+      .gs-webResult.gs-result a.gs-title:hover,
+      .gs-webResult.gs-result a.gs-title:hover b,
+      .gs-imageResult a.gs-title:hover,
+      .gs-imageResult a.gs-title:hover b {
+        color: #0000CC;
+      }
+      .gs-webResult.gs-result a.gs-title:active,
+      .gs-webResult.gs-result a.gs-title:active b,
+      .gs-imageResult a.gs-title:active,
+      .gs-imageResult a.gs-title:active b {
+        color: #0000CC;
+      }
+      .gsc-cursor-page {
+        color: #0000CC;
+      }
+      a.gsc-trailing-more-results:link {
+        color: #0000CC;
+      }
+      .gs-webResult .gs-snippet,
+      .gs-imageResult .gs-snippet,
+      .gs-fileFormatType {
+        color: #000000;
+      }
+      .gs-webResult div.gs-visibleUrl,
+      .gs-imageResult div.gs-visibleUrl {
+        color: #008000;
+      }
+      .gs-webResult div.gs-visibleUrl-short {
+        color: #008000;
+      }
+      .gs-webResult div.gs-visibleUrl-short {
+        display: none;
+      }
+      .gs-webResult div.gs-visibleUrl-long {
+        display: block;
+      }
+      .gs-promotion div.gs-visibleUrl-short {
+        display: none;
+      }
+      .gs-promotion div.gs-visibleUrl-long {
+        display: block;
+      }
+      .gsc-cursor-box {
+        border-color: #FFFFFF;
+      }
+      .gsc-results .gsc-cursor-box .gsc-cursor-page {
+        border-color: #E9E9E9;
+        background-color: #FFFFFF;
+        color: #0000CC;
+      }
+      .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+        border-color: #FF9900;
+        background-color: #FFFFFF;
+        color: #0000CC;
+      }
+      .gsc-webResult.gsc-result.gsc-promotion {
+        border-color: #336699;
+        background-color: #FFFFFF;
+      }
+      .gsc-completion-title {
+        color: #0000CC;
+      }
+      .gsc-completion-snippet {
+        color: #000000;
+      }
+      .gs-promotion a.gs-title:link,
+      .gs-promotion a.gs-title:link *,
+      .gs-promotion .gs-snippet a:link {
+        color: #0000CC;
+      }
+      .gs-promotion a.gs-title:visited,
+      .gs-promotion a.gs-title:visited *,
+      .gs-promotion .gs-snippet a:visited {
+        color: #0000CC;
+      }
+      .gs-promotion a.gs-title:hover,
+      .gs-promotion a.gs-title:hover *,
+      .gs-promotion .gs-snippet a:hover {
+        color: #0000CC;
+      }
+      .gs-promotion a.gs-title:active,
+      .gs-promotion a.gs-title:active *,
+      .gs-promotion .gs-snippet a:active {
+        color: #0000CC;
+      }
+      .gs-promotion .gs-snippet,
+      .gs-promotion .gs-title .gs-promotion-title-right,
+      .gs-promotion .gs-title .gs-promotion-title-right * {
+        color: #000000;
+      }
+      .gs-promotion .gs-visibleUrl,
+      .gs-promotion .gs-visibleUrl-short {
+        color: #008000;
+      }
+    </style>
+    <style type="text/css">
+      .gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-moz-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:3px}.gssb_e{border:0}.gssb_l{margin:5px 0}#gsc-i-id1::-webkit-input-placeholder{font-size:14px}#gsc-i-id1:-moz-placeholder{font-size:14px}#gsc-i-id1::-moz-placeholder{font-size:14px}#gsc-i-id1:-ms-input-placeholder{font-size:14px}#gsc-i-id1:focus::-webkit-input-placeholder{color:transparent}#gsc-i-id1:focus:-moz-placeholder{color:transparent}#gsc-i-id1:focus::-moz-placeholder{color:transparent}#gsc-i-id1:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js" async></script>
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+    <script src="//w.soundcloud.com/player/api.js"></script>
+
+
+
+    <script>
+      // Setup Polymer options - https://www.polymer-project.org/1.0/docs/devguide/settings
+      window.Polymer = {
+        disableUpgradeEnabled: false,
+        dom: 'shadow',
+        lazyRegister: true,
+        noUrlSettings: false,
+        suppressBindingNotifications: false,
+        suppressTemplateNotifications: false,
+        useNativeCSSProperties: false
+      };
+    </script>
+
+
+    <link rel="import" href="//pl.ea.com/release/1.32.2/elements/ea-elements.html" />
+
+
+
+
+
+
+
+    <link rel="import" href="//pl.ea.com/eacom/release/1.6.0/elements/eacom-elements.html" />
+
+
+
+
+    <style is="custom-style">
+      :root {
+
+        --ea-theme-color: #ff1e3c;
+
+        --ea-theme-dark-gradient: #D21832;
+
+        --ea-theme-light-gradient: #FC2442;
+
+      }
+    </style>
+
+
+
+
+
+    <title>TheGamingZone</title>
+
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="TheGamingZone">
+    <meta property="og:description" content="Gaming comminty.">
+    <meta property="og:url" content="https://thegameing.tk">
+    <meta property="og:site_name" content="thegamingzone.tk">
+
+    <meta property="og:image" content="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/10/sv-se-featured-image.jpg.adapt.crop191x100.1200w.jpg">
+
+
+
+    <meta name="description" content="Vi vill inspirera världen med spel. Electronic Arts är en av världens största utgivare av spel på konsol, PC och mobil.">
+    <meta name="author" content="Electronic Arts">
+    <meta property="article:modified_time" content="2017-08-31T17:02:44Z">
+    <meta property="article:published_time" content="2016-10-19T13:20:38-07:00">
+
+
+
+
+
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ea">
+    <meta name="twitter:title" content="Välkommen till EA.com – Electronic Arts officiella webbplats">
+    <meta name="twitter:description" content="Vi vill inspirera världen med spel. Electronic Arts är en av världens största utgivare av spel på konsol, PC och mobil.">
+
+    <meta name="twitter:image" content="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/10/sv-se-featured-image.jpg.adapt.crop16x9.320w.jpg">
+
+    <meta name="twitter:creator" content="@ea">
+
+
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+
+
+"image": {
+    "@type": "ImageObject",
+    "url": "https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/10/sv-se-featured-image.jpg.adapt.crop191x100.1200w.jpg"
+},
+
+    "author": {
+      "@type": "Organization",
+      "name": "THeGamingZone",
+      "sameAs": ""
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "THeGamingZone",
+        "sameAs": "",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://prod-media-eacom.pulse.ea.com/content/dam/ea/c-patternlibrary/logo/EA_logo.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "inLanguage": "sv",
+    "description": "",
+    "headline": "",
+    "url": "thegmaingzone.tk"
+}
+    </script>
+
+
+
+  </head>
+  <body unresolved>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav is="ea-local-nav"
+
+         home-text = "TheGamingZone Home"
+         home-tooltip = ""
+         home-link = "/sv-se/"
+
+
+         logo-image="img/GZ.png"
+
+
+         logo-tooltip="TheGamingZone Home"
+
+
+         theme = "dark"
+
+
+         shelf-type = "band"
+
+
+         open-drawer-text = "Meny"
+
+
+         open-drawer-tooltip = "Öppna meny"
+
+
+         close-drawer-text = "Stäng"
+
+
+         close-drawer-tooltip = "Stäng meny"
+
+
+
+         hide-featured-product
+
+
+         mini
+
+         >
+
+      <a title="" href="/sv-se/">
+        TheGamingZone
+
+        <img
+             src="img/GZ.png"
+
+             alt="TheGamingZone Home"
+
+             />
+
+      </a>
+
+
+
+
+
+
+
+
+
+
+
+      <a
+         is="ea-link"
+         class="eapl-local-nav__drawer-link"
+         href="Game.html"
+         title=""
+         >Games</a>
+
+
+      <a
+         is="ea-link"
+         class="eapl-local-nav__drawer-link"
+         href="http://www.ea.com/eaaccess"
+         title=""
+         >Eraly Acces</a>
+
+
+
+
+
+
+      <a
+         is="ea-link"
+         class="eapl-local-nav__drawer-link"
+         href="/sv-se/careers"
+         title=""
+         >Work</a>
+
+
+
+
+
+
+      <a
+         is="ea-link"
+         class="eapl-local-nav__drawer-link"
+         href="/sv-se/newsletter"
+         title=""
+         >Make a game</a>
+
+
+
+
+
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    <ea-hero
+
+             layout="medium"
+
+
+
+             text-position="center"
+
+
+
+             text-align="center"
+
+
+
+             text-color="dark"
+
+
+
+
+
+             background-color="light"
+
+
+
+
+
+
+
+             subtitle-text="TheGamingZone"
+
+
+
+             image-smallest="https://media.contentapi.ea.com/content/dam/eacom/images/2017/08/ea-hero-medium-tf2-pf-7x2-xl.png.adapt.crop3x5.320w.png"
+             image-small="https://media.contentapi.ea.com/content/dam/eacom/images/2017/08/ea-hero-medium-tf2-pf-7x2-xl.png.adapt.crop3x5.767w.png"
+             image-medium="https://media.contentapi.ea.com/content/dam/eacom/images/2017/08/ea-hero-medium-tf2-pf-7x2-xl.png.adapt.crop2x1.1023w.png"
+             image-large="https://media.contentapi.ea.com/content/dam/eacom/images/2017/08/ea-hero-medium-tf2-pf-7x2-xl.png.adapt.crop5x2.1455w.png"
+             image-largest="https://media.contentapi.ea.com/content/dam/eacom/images/2017/08/ea-hero-medium-tf2-pf-7x2-xl.png.adapt.crop7x2.1920w.png"
+             image-tooltip=""
+
+
+             logo-image="img/GZ.png"
+
+
+
+             spacing-bottom="none"
+
+
+             scrim-color="none"
+
+
+             scrim-opacity="medium"
+
+             >
+
+
+      <h2>TheGamingZone</h2>
+
+
+
+      <img
+           src="https://media.contentapi.ea.com/content/dam/eacom/images/2017/08/ea-hero-medium-tf2-pf-7x2-xl.png.adapt.crop3x5.320w.png"
+           alt=""
+           srcset="https://media.contentapi.ea.com/content/dam/eacom/images/2017/08/ea-hero-medium-tf2-pf-7x2-xl.png.adapt.crop3x5.320w.png 320w, https://media.contentapi.ea.com/content/dam/eacom/images/2017/08/ea-hero-medium-tf2-pf-7x2-xl.png.adapt.crop3x5.767w.png 768w, https://media.contentapi.ea.com/content/dam/eacom/images/2017/08/ea-hero-medium-tf2-pf-7x2-xl.png.adapt.crop2x1.1023w.png 1024w, https://media.contentapi.ea.com/content/dam/eacom/images/2017/08/ea-hero-medium-tf2-pf-7x2-xl.png.adapt.crop5x2.1455w.png 1320w, https://media.contentapi.ea.com/content/dam/eacom/images/2017/08/ea-hero-medium-tf2-pf-7x2-xl.png.adapt.crop7x2.1920w.png 1456w"
+           />
+
+
+      <img
+           src="https://media.contentapi.ea.com/content/dam/eacom/common/tf2-logo-black.png"
+
+           />
+
+
+
+
+
+
+      <a
+         is="ea-cta"
+
+         type="standard"
+
+
+         href="https://discord.gg/8QhYU22"
+
+
+
+         icon="none"
+
+
+
+         fill-color="none"
+
+
+         text-color="dark"
+
+
+         stroke-color="dark"
+
+
+
+
+
+         intent="navigation"
+
+
+
+
+
+         emphasis="primary"
+
+         >
+
+       Join  Our Discord
+
+      </a>
+
+
+    </ea-hero>
+
+
+    <ea-section
+
+                type="railed"
+
+
+                layout="100"
+
+
+                background-color="none"
+
+
+                background-overflow="visible"
+
+
+                spacing-top="none"
+
+
+                spacing-bottom="none"
+
+
+
+
+                >
+
+
+
+      <ea-section-column
+
+                         indent-left=""
+
+
+                         indent-right=""
+
+
+                         text-align="left"
+
+                         >
+
+
+        <ea-subheading
+
+                       type="ordered"
+
+
+                       layout="large"
+
+
+                       text-align="left"
+
+
+                       text-color="dark"
+
+
+
+
+
+                       spacing-top="small"
+
+
+                       spacing-bottom="none"
+
+                       >
+
+
+
+        </ea-subheading>
+
+
+        <ea-grid
+
+
+
+                 type="ordered"
+
+
+                 tile-media-shape="rectangle"
+
+
+
+
+                 layout="3up"
+
+
+                 tile-type="vertical"
+
+
+                 tile-text-align="left"
+
+
+                 tile-text-color="dark"
+
+
+                 tile-color="none"
+
+
+
+
+
+
+
+                 hide-cta
+
+
+                 hide-brand-stroke
+
+
+
+                 spacing-top="small"
+
+
+                 spacing-bottom="medium"
+
+
+
+
+                 tile-scrim-color="none"
+
+
+                 tile-scrim-opacity="medium"
+
+                 tile-align=""
+
+
+
+
+
+
+
+
+
+
+
+                 >
+
+
+
+
+
+
+            
+
+          
+
+
+
+        </ea-grid>
+
+      </ea-section-column>
+
+    </ea-section>
+
+
+    
+
+  
+
+
+    <ea-section
+
+                type="railed"
+
+
+                layout="100"
+
+
+                background-color="light"
+
+
+                background-overflow="hidden"
+
+
+                spacing-top="none"
+
+
+                spacing-bottom="none"
+
+
+
+
+                >
+
+
+
+      
+
+
+        <ea-subheading
+
+                       type="ordered"
+
+
+                       layout="large"
+
+
+                       text-align="left"
+
+
+                       text-color="dark"
+
+
+
+
+
+                       spacing-top="medium"
+
+
+                       spacing-bottom="medium"
+
+                       >
+
+
+
+        </ea-subheading>
+
+
+
+
+
+        <ea-box-set
+
+                    layout="3up"
+
+
+                    spacing-top="none"
+
+
+                    spacing-bottom="medium"
+
+
+
+
+
+                    >
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+        </ea-box-set>
+
+
+        
+
+        
+
+     
+
+    </ea-section>
+
+
+    <ea-section
+
+                type="full-bleed"
+
+
+                layout="100"
+
+
+                background-color="none"
+
+
+                background-overflow="visible"
+
+
+                spacing-top="none"
+
+
+                spacing-bottom="none"
+
+
+
+
+                >
+
+
+
+      <ea-section-column
+
+                         indent-left=""
+
+
+                         indent-right=""
+
+
+                         text-align="left"
+
+                         >
+
+
+        
+      </ea-section-column>
+
+    </ea-section>
+
+
+    <ea-modal
+              modal
+
+              id="nhl18"
+
+
+              theme="light"
+
+
+              type="railed"
+
+              >
+
+
+      <ea-youtube
+                  video-id="_IyvNfuG3-M"
+
+
+                  playlist=""
+
+                  autoplay="0"
+                  controls="0"
+                  rel="0"
+                  annotations="1"
+                  hide-info="0"
+
+                  >
+
+
+        <div itemscope itemtype="http://schema.org/VideoObject">
+          <link itemprop="url" href="https://www.youtube.com/watch?v=_IyvNfuG3-M">
+
+          <iframe src="https://www.youtube.com/embed/_IyvNfuG3-M"></iframe>
+        </div>
+      </ea-youtube>
+
+    </ea-modal>
+
+
+    <ea-modal
+              modal
+
+              id="tf2wargames"
+
+
+              theme="light"
+
+
+              type="railed"
+
+              >
+
+
+      <ea-youtube
+                  video-id="g_beUto-_iw"
+
+
+                  playlist=""
+
+                  autoplay="0"
+                  controls="0"
+                  rel="0"
+                  annotations="1"
+                  hide-info="0"
+
+                  >
+
+
+        <div itemscope itemtype="http://schema.org/VideoObject">
+          <link itemprop="url" href="https://www.youtube.com/watch?v=g_beUto-_iw">
+
+          <iframe src="https://www.youtube.com/embed/g_beUto-_iw"></iframe>
+        </div>
+      </ea-youtube>
+
+    </ea-modal>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer
+            is="ea-local-footer"
+            theme="dark"
+            >
+      
+
+      
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer
+            is="ea-network-footer"
+            theme="dark"
+
+
+
+            logo-image="img/GZ.png"
+            logo-tooltip=""
+
+
+
+            logo-link-url="/sv-se/"
+            logo-link-text="EA"
+            logo-link-tooltip="EA"
+
+            >
+
+      <img
+           src="img/GZ.png"
+           alt=""
+           />
+
+
+
+
+
+
+      <ea-network-links
+                        text-color="dark"
+                        >
+
+        <a
+           is="ea-link"
+           href=""
+           title="© 2017 The Gaming Zone"
+           >© 2017 The Gaming Zone</a>
+
+
+      </ea-network-links>
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+    <ea-player player-endpoint="/user-data"></ea-player>
+
+
+
+
+
+
+
+
+    <ea-modal
+              modal
+
+              id="eacomagegate"
+
+
+              theme="dark"
+
+
+              >
+
+
+      <ea-age-gate
+                   id="eacomagegate"
+
+                   age="18"
+
+
+                   error="Du är ej berättigad att se det här innehållet."
+
+
+                   message="Ange födelsedatum. "
+
+                   >
+
+
+
+        <ea-date-field
+
+                       type="date"
+
+
+
+
+
+                       text-color="light"
+
+
+                       month-placeholder="MM"
+
+
+                       day-placeholder="DD"
+
+
+                       year-placeholder="YYYY"
+
+
+
+                       label-text="Ange ditt födelsedatum"
+
+
+                       >
+        </ea-date-field>
+
+
+
+
+
+        <ea-submit
+
+                   value-text="Skicka"
+
+
+                   text-color="light"
+
+
+                   >
+        </ea-submit>
+
+
+      </ea-age-gate>
+
+    </ea-modal>
+
+
+
+
+
+
+
+    <script src="//use.typekit.net/txn1klh.js"></script>
+
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="//tags.tiqcdn.com/utag/ea/eacom/prod/utag.js" async></script>
+
+
+  </body>
+</html>
